@@ -14,8 +14,8 @@ class Line extends React.Component {
 
        const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
        
-       const w = 500;
-       const h = 200;
+       const w = 300;
+       const h = 120;
        
        const svg = d3
          .select(faux)
@@ -49,12 +49,15 @@ class Line extends React.Component {
 
     render() {
       return (
-         <div className="line-container">
-             {this.props.chart}
-          </div>
+         <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '1em'
+         }}>
+            {this.props.chart}
+         </div>
 
-      )
-      }
+   )}
 }
 
 export default withFauxDOM(Line);
