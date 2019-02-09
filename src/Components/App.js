@@ -4,7 +4,7 @@ import './App.css';
 
 import {withFauxDOM} from 'react-faux-dom'
 
-class Line extends React.Component {
+class Line extends Component {
 
     componentDidMount() {
        const faux = this.props.connectFauxDOM('div', 'chart');
